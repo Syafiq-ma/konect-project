@@ -1,0 +1,295 @@
+.modal{
+    background: rgba(25, 25, 25, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .paper{
+        width: 350px;
+        height: 580px;
+        background: radial-gradient(100% 206.01% at 100% 97.06%, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0) 100%);
+        border: 0.5px solid rgba(241, 241, 241, 0.2);
+        box-sizing: border-box;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+        border-radius: 10px;
+        .container{
+            .top{
+                display: flex;
+                align-items: center;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                p{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: rgba(255, 255, 255, 0.8);
+                }
+                .exitButton{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: radial-gradient(100% 206.01% at 100% 97.06%, rgba(255, 255, 255, 0.46) 0%, rgba(255, 255, 255, 0) 100%);
+                    border: 0.5px solid rgba(241, 241, 241, 0.2);
+                    box-sizing: border-box;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+                    border-radius: 30px;
+                    width: 30px;
+                    height: 30px;
+                    transition: .3s;
+                    margin-left: 130px;
+                    :hover{
+                        opacity: 70%;
+                    }
+                }
+            }
+            .desc{
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: rgba(255, 255, 255, 0.4);
+                margin: 0 20px;
+            }
+            .detailOrder{
+                margin-left: 20px;
+                display: flex;
+                .dateTime{
+                    margin-top: 10px;
+                    .duration{
+                        display: flex;
+                        align-items: center;
+                        p{
+                            margin: 0;
+                            margin-left: 5px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 9px;
+                            line-height: 13px;
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    .date{
+                        margin-top: 8px;
+                        display: flex;
+                        align-items: center;
+                        p{
+                            margin: 0;
+                            margin-left: 5px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 9px;
+                            line-height: 13px;
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                    .time{
+                        margin-top: 8px;
+                        display: flex;
+                        align-items: center;
+                        p{
+                            margin: 0;
+                            margin-left: 5px;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 9px;
+                            line-height: 13px;
+                            color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                }
+                .price{
+                    margin-left: 123px;
+                    margin-top: 45px;
+                    p{
+                        margin: 0;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
+            hr{
+                margin: 10px 20px;
+                border: 0.5px solid rgba(255, 255, 255, 0.2);
+            }
+            .formTitle{
+                margin: 0;
+                margin-top: 15px;
+                margin-left: 20px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: rgba(255, 255, 255, 0.8);
+            }
+            .form{
+                margin: 0 6px;
+                display: flex;
+                max-width: 330px;
+                flex-flow: row wrap;
+                .nama{
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 8px;
+                    .namaLabel{
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 9px;
+                        line-height: 13px;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    .nama{
+                        width: 149px;
+                        height: 32px;
+                        background: rgba(25, 25, 25, 0.4);
+                        box-shadow: inset 4px 4px 5px rgba(25, 25, 25, 0.25);
+                        border-radius: 5px;
+                    }
+                }
+                .job{
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 8px;
+                    .jobLabel{
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 9px;
+                        line-height: 13px;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    .job{
+                        width: 149px;
+                        height: 32px;
+                        background: rgba(25, 25, 25, 0.4);
+                        box-shadow: inset 4px 4px 5px rgba(25, 25, 25, 0.25);
+                        border-radius: 5px;
+                    }
+                }
+                .phonenumber{
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 8px;
+                    .phonenumberLabel{
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 9px;
+                        line-height: 13px;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    .phonenumber{
+                        width: 149px;
+                        height: 32px;
+                        background: rgba(25, 25, 25, 0.4);
+                        box-shadow: inset 4px 4px 5px rgba(25, 25, 25, 0.25);
+                        border-radius: 5px;
+                    }
+                }
+                .email{
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 8px;
+                    .emailLabel{
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 9px;
+                        line-height: 13px;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    .email{
+                        width: 149px;
+                        height: 32px;
+                        background: rgba(25, 25, 25, 0.4);
+                        box-shadow: inset 4px 4px 5px rgba(25, 25, 25, 0.25);
+                        border-radius: 5px;
+                    }
+                }
+                .content{
+                    margin-top: 8px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 8px;
+                    .contentLabel{
+                        margin-top: 8px;
+                        margin-left: 8px;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 9px;
+                        line-height: 13px;
+                        color: rgba(172, 168, 168, 0.7);
+                    }
+                    .content{
+                        display: flex;
+                        text-align: start;
+                        width: 313px;
+                        height: 97px;
+                        background: rgba(25, 25, 25, 0.4);
+                        box-shadow: inset 4px 4px 5px rgba(25, 25, 25, 0.25);
+                        border-radius: 5px;
+                    }
+                }
+            }
+            .button{
+                display: flex;
+                margin-left: 87px;
+                margin-top: 20px;
+                .changeDate{
+                    width: 110px;
+                    height: 38px;
+                    background: rgba(255, 255, 255, 0.11);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        /* identical to box height */
+                        display: flex;
+                        align-items: center;
+                        text-align: right;
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+                .confirm{
+                    width: 110px;
+                    height: 38px;
+                    margin-left: 18px;
+                    background: rgba(255, 255, 255, 0.11);
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        /* identical to box height */
+                        display: flex;
+                        align-items: center;
+                        text-align: right;
+                        color: rgba(255, 255, 255, 0.8);
+                    }
+                }
+            }
+        }
+    }
+}
