@@ -1,0 +1,15 @@
+.background{
+  overflow: visible;
+  margin-bottom: 0px;
+  padding-bottom: 60px;
+  padding-left: 0px;
+  background-color: #000;
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #000, hsla(0, 0%, 89.4%, 0.67) 99%, hsla(0, 0%, 90.2%, 0.67));
+  font-family: Merriweather, serif;
+  background-clip: border-box;
+  -o-object-fit: fill;
+  object-fit: fill;
+  .navbar{
+    
+  }
+}

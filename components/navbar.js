@@ -6,6 +6,9 @@ class Navbar extends Component{
     render(){
         return(
             <div className={styles.navbar}>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+                </style>
                 <div className={styles.search}>
                     <Image 
                         src='/searchIcon.svg'
