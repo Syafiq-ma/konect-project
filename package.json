@@ -19,6 +19,7 @@
     "react-spring-bottom-sheet": "^3.2.1",
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.32.8"
   }
 }
