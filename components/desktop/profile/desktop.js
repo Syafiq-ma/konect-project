@@ -13,15 +13,10 @@ class Desktop extends Component{
                     <Navbar/>
                 </div>
                 <div className={styles.container}>
-                    <div className={styles.fotoWrapper}>
-                        <Image
-                        className={styles.foto}
-                            src='/image.jpg'
-                            width={370}
-                            height={570}
-                            quality={100}
-                            objectFit="cover"
-                        />
+                    <div className={styles.videoWrapper}>
+                        <video height={570} style={{borderRadius:'30px 0 0 30px'}} autoPlay loop>
+                            <source src="/video.mp4" type="video/mp4"/>
+                        </video>
                     </div>
                     <div className={styles.container}>
                         <Profile/>
