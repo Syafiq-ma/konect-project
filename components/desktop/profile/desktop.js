@@ -14,8 +14,8 @@ class Desktop extends Component{
                 </div>
                 <div className={styles.container}>
                     <div className={styles.videoWrapper}>
-                        <video height={570} style={{borderRadius:'30px 0 0 30px'}} autoPlay loop>
-                            <source src="/video.mp4" type="video/mp4"/>
+                        <video autoPlay loop height={570} style={{borderRadius:'30px 0 0 30px'}}>
+                            <source src="/video.mp4" type="video/mp4" autoPlay loop/>
                         </video>
                     </div>
                     <div className={styles.container}>

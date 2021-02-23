@@ -18,7 +18,7 @@ export default function Example() {
     <div className={styles.background}>
         <div className={styles.video}>
             <video height={640} width={360} autoPlay loop>
-                <source src="/video.mp4" type="video/mp4"/>
+                <source src="/video.mp4" type="video/mp4" autoPlay loop/>
             </video>
         </div>
         <div style={{position:'absolute'}}>
