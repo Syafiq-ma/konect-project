@@ -6,13 +6,24 @@ import React from 'react';
 import Navbar from '../../navbar';
 import Detail from './detail';
 import Preview from './preview';
+import Small from './small';
 import styles from '../../../styles/mobile.module.css'
 
+function content(height){
+    if (height==250) {
+        return <Small/>
+  } else if (height==350){
+      return <Preview/>
+  } else if (height=1000){
+      return <Detail/>
+  }
+}
 
 export default function Example() {
   const [open] = useState(true)
   const sheetRef = React.useRef()
-  const [fullHeight, setFullHeight] = useState(false)
+  const [height, setHeight] = useState(200)
+
 
   return (
     <div className={styles.background}>
@@ -26,20 +37,40 @@ export default function Example() {
             <BottomSheet
                 ref={sheetRef}
                 open={open} 
-                snapPoints={({ maxHeight }) => [350, maxHeight]}
+                snapPoints={({ maxHeight }) => [250, 350, maxHeight]}
                 blocking={false}
                 onSpringStart={async(event)=>{
-                    if (event.type==='SNAP') {
-                        sheetRef.current.height==350?setFullHeight(true):setFullHeight(false)
+                    if (event.type==='SNAP' && event.source === 'dragging') {
+                        switch (sheetRef.current.height) {
+                            case 250:
+                                setHeight(350)
+                                break;
+                            case 350:
+                                setHeight(1000)
+                                break;
+                            default:
+                                setHeight(350)
+                                break;
+                        }
                     }
                     
                 }}
                 onSpringEnd={()=>{
-                    sheetRef.current.height==350?setFullHeight(false):setFullHeight(true)
+                    switch (sheetRef.current.height) {
+                        case 250:
+                            setHeight(250)
+                            break;
+                        case 350:
+                            setHeight(350)
+                            break;
+                        default:
+                            setHeight(1000)
+                            break;
+                    }
                 }}
             >
                 <div>
-                {fullHeight?<Detail/>:<Preview/>}
+                    {content(height)}
                 </div>
                 
             </BottomSheet>
