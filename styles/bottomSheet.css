@@ -2,10 +2,9 @@
   border-top-left-radius: var(--rsbs-overlay-rounded,30px);
   border-top-right-radius: var(--rsbs-overlay-rounded,30px);
   display: flex;
-  background: rgba(25, 25, 25, 0.4);
+  background: #262626;
   box-shadow: 0px 0px 10px 0.25px rgba(25, 25, 25, 0.5);
-  backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
+
   flex-direction: column;
   height: var(--rsbs-overlay-h,0px);
   transform: translate3d(0, var(--rsbs-overlay-translate-y,0px), 0);
